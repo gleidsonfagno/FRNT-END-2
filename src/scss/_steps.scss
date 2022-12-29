@@ -1,0 +1,40 @@
+#como-funciona {
+    background: $font-color-primary;
+}
+
+.steps {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    &__item {
+        padding: 1rem;
+        // width: calc(80% / 5 - 1rem);
+        width: 33%;
+        text-align: center;
+        span {
+            color: $color-secondary;
+        }
+    }
+
+}
+
+@media (max-width: 630px) {
+    #como-funciona{
+        h1{
+            text-align: center;
+        }
+    }
+    .steps{
+        display: flex;
+        flex-wrap: wrap !important;
+    }
+}
+
+// @media (max-width: 500px) {
+//     .steps{
+//         display: grid;
+//         grid-template-columns: repeat(2, 1fr);
+//     }
+// }
